@@ -1,8 +1,8 @@
 # Learn Bootstrap in 30 Days
 
-### After completing this course, we'll build [10 Projects](#) with Bootstrap 5.
+### After completing this course, we'll build [10 Projects](#10-bootstrap-projects) with Bootstrap 5.
 
-While you complete the 30-days module, jump in the [Projects Section](#).
+While you complete the 30-days module, jump in the [Projects Section](#10-bootstrap-projects).
 
 | **Day** | **Topics** |
 | :-----: | :--------: |
