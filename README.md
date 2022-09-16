@@ -38,7 +38,7 @@ While you complete the 30-days module, jump in the [Projects Section](#).
 |   29    |            |
 |   30    |            |
 
-# 20 HTML & CSS Projects
+# 10 Bootstrap Projects
 
 | **Project No.** | **Project Name** | **Live Demo** |
 | :-------------: | :--------------: | :-----------: |
