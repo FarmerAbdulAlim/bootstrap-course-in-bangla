@@ -71,15 +71,27 @@ While you complete the 30-days module, jump in the [Projects Section](#10-bootst
 - HTML, CSS
 - JavaScript (Basic Knowledge Preferrable)
 
-# Day-01: Introduction To Bootstrap 5
+# Day-01: Bootstrap Container and Grid
 
-- []()
+- [What is Bootstrap and Why Bootstrap?](#what-is-bootstrap-and-why-bootstrap)
+- [Boostrap Breakpoints](#bootstrap-breakpoints)
 
 ### What is Bootstrap and Why Bootstrap?
 
 - Bootstrap is the most popular, free and open-source HTML, CSS, and JavaScript framework for creating responsive, mobile-first websites.
 - Mobile First Website বলতে আসলে কি বুঝায়? কোন একটা Website Code লিখার ক্ষেত্রে আমরা যদি Mobile Screen এ কি রকম দেখাবে সেটা আগে চিন্তা করি এবং সেভাবেই Design করি, তাহলে ঐ Website কে Mobile First Website বলা হয়। Moble First Website এর ক্ষেত্রে আগে Mobile এর কথা মাথায় রাখতে হয়, তারপর ধীরে ধীরে বড় Screen এর কথা মাথায় রেখে তার জন্যও Media Query ব্যবহার করে Codes লিখা হয়।
 - Bootstrap এর প্রধান কাজ হলো CSS এর Codes কমিয়ে ফেলা এবং Responsive Design করা। অর্থাৎ একই কাজ আমরা যদি শুধু CSS দিয়ে করি, তাহলে হয়তো অনেক Codes লিখতে হবে, যেখানে Bootrap ব্যবহার করার ফলে খুব কম Codes লিখেই আমরা সেই কাজটি করে ফেলতে পারি। এরফলে, সময়ও আমাদের কম লাগে।
+
+### Bootstrap Breakpoints
+
+|  **Breakpoint**   | **Class Infix** | **Dimensions** | **Specific Range** |
+| :---------------: | :-------------: | :------------: | :----------------: |
+|    Extra Small    |      None       |     <576px     |      0-575px       |
+|       Small       |       sm        |     ≥576px     |     576-767px      |
+|      Medium       |       md        |     ≥768px     |     768-991px      |
+|       Large       |       lg        |     ≥992px     |     992-1199px     |
+|    Extra Large    |       xl        |    ≥1200px     |    1200-1399px     |
+| Extra Extra Large |       xxl       |    ≥1400px     |   1400-unlimited   |
 
 ### Creating Our First Bootstrap Page
 
@@ -115,20 +127,63 @@ While you complete the 30-days module, jump in the [Projects Section](#10-bootst
 
 ### Bootstrap Grid System
 
-- Bootstrap হলো 12-columns based একটি layout.
+- Bootstrap হলো 12-columns based একটি Layout System.
+- Bootstrap Grid System তৈরি করা হয়েছে CSS Flexbox দ্বারা।
 - সবগুলো `col` class, একটি `row` class Div দিয়ে wrap করতে হয়।
-- শুধু `col` ব্যবহার করার অর্থ হলো, যেকোনো Size এর Screen এই
+- যদি আমরা 4 টা Column তৈরি করি, এবং প্রত্যেকটার Class `col` দেই, তাহলে প্রতিটা Column 12/4 = 3 একক যায়গা নিবে এবং তা সব ধরণের Screen এ Same দেখাবে ।
+- এবার যদি Class হিসেবে `col-sm-4` এইভাবে 3 টা কলাম নেই, তাহলে Small Device এ অর্থাৎ যে সকল Device এর Width 576px থেকে 767px এর মধ্যে ঐসকল Device এ 3 টা কলাম একটা Row তে দেখাবে । এখন যদি এর চেয়ে ছোট Device এ কি হবে সেটা উল্লেখ করা না থাকে, তাহলে এর চেয়ে ছোট Device এ 3 টা কলাম 3 টা Row তে দেখাবে, অর্থাৎ প্রতিটা কলাম এর Width হবে 100% বা এভাবে বলতে পারি, প্রতিটা Column 12 টা Column-based-layout এর যায়গা একাই দখল করবে।
+  একইভাবে, এর চেয়ে বড় Device এ কি হবে, সেটা যদি বলা না থাকে, তাহলে যে Device এর জন্য আমরা Code লিখেছি টা বড় Device এও Same কাজই করবে।
 
 #### Screenshot
 
+On Extra Small Screen (<576px)
+
+![xs](./day-01-container-grid/images/xs.png)
+
 On Small Screen
 
-![grid](./day-01-container-grid/images/grid.png)
+![sm](./day-01-container-grid/images/sm.png)
+
+On Medium Screen
+
+![md](./day-01-container-grid/images/md.png)
 
 On Large Screen
 
-![grid2](./day-01-container-grid/images/grid2.png)
+![lg](./day-01-container-grid/images/lg.png)
+
+On Extra Large Screen
+
+![xl](./day-01-container-grid/images/xl.png)
+
+On Extra Extra Large Screen
+
+![xxl](./day-01-container-grid/images/xxl.png)
 
 #### Open Project in CodePen
 
-[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/zYjapLo)
+[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/vYjrzKJ)
+
+# Day-02: Bootstrap Forms, Buttons and Cards
+
+### A Simple Form using Bootstrap 5
+
+#### Screenshot
+
+![form]()
+
+#### Live Project in CodePen
+
+[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/MWGByGm)
+
+### Bootstrap Buttons
+
+#### Screenshot
+
+![buttons]()
+
+#### Live Project in CodePen
+
+[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/OJZwNey)
+
+### Bootstrap Card
